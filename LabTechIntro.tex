@@ -1,0 +1,312 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{cases,color,comment}
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\ft}{\frametitle}
+\newcommand{\ssec}{\subsection}
+\newcommand{\sss}{\subsubsection}
+\newcommand{\insec}{\insertsection}
+\newcommand{\iss}{\insertsubsection}
+\newcommand{\isss}{\insertsubsubsection}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\mathversion{bold}
+\title{Introduction to LabTech}
+\subtitle{How to search \& save things on the Internet\\
+-Advanced tips for graduate students-
+}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}\\(Authorized Affiliate of VIA Programs\footnote{\texttt{http://viaprograms.org/}})}
+\date[November 2019, ＠ Learning Cafe]{November 2019, at our Learning Cafe}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+\setcounter{tocdepth}{3}
+\tableofcontents[
+sectionstyle=show,
+subsectionstyle=show/show,
+subsubsectionstyle=show/show/show
+]
+\end{frame}
+\section{Introduction}
+\begin{frame}\ft{\insertsection}
+\bb{What is LabTech ?}
+Laboratory Tech$\to$Made to help your research.
+\bit
+\item Search \& Save
+\item Data Backup
+\bit
+\item \LaTeX
+\item Source Code (C, C++, Python, Julia)
+\eit
+\item Smarter Browsing on the Internet
+\eit
+\eb
+\end{frame}
+\section{Open Access}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Open Access Week is held every October
+\item Here are some things related to open access
+\eit
+\bb{}
+\bit
+\item arXiv
+\item doaj.org
+\item PubPeer
+\item SpringerOpen
+\item Google Chrome/Firefox extensions
+\bit
+\item Open Access Button
+\item Unpaywall
+\eit
+\item Researcher SNS 
+\bit
+\item academia.edu
+\item ResearchGate
+\eit
+\eit
+\eb
+\end{frame}
+\section{Search \& Save}
+\begin{frame}\ft{\insertsection}
+We have many search engines.
+\bit
+\item Google
+\item Bing
+\item DuckDuckGo\footnote{\texttt{https://duckduckgo.com/}}
+\item Baidu (Used in China)
+\item Yandex (Used in Russia)\footnote{\texttt{https://yandex.com/}}
+\eit
+But there are better options for academic data.
+\end{frame}
+\subsection{Searching Documents}
+\subsubsection{Databases}
+\begin{frame}\ft{\insertsubsubsection}
+\bit
+\item Academia.edu, ResearchGate (researcher version LinkedIn)
+\item Academic Search\footnote{\texttt{https://academicsearch.org/}}
+\item arXiv (preprint database)
+\item Google Scholar
+\item SpringerLink (database for Springer publications)
+\item ScienceDirect (database for Elsevier publications)
+\item Core\footnote{\texttt{https://core.ac.uk/}}, JSTOR, Scopus
+\item NSF
+\item Semantic Scholar
+\item Wiley Online Library
+\eit
+\end{frame}
+\begin{frame}\ft{\insertsubsubsection}
+Sometimes SNS are useful.
+\bit
+\item Unofficial arXiv bots for each areas
+\item Springer, Elsevier accounts
+\eit
+Tells breaking news in each discipline.
+\end{frame}
+\subsubsection{Well-Known Academic Publishers}
+\begin{frame}\ft{\insertsubsubsection}
+\bit
+\item Springer group
+\item Elsevier
+\item Academic Press
+\item Addison-Wesley
+\item CRC Press
+\item Dover Publications
+\item Walter de Gruyter
+\item World Scientific
+\item University publishers
+\bit
+\item Cambridge Univ. Press
+\item Oxford Univ. Press
+\item Princeton Univ. Press
+\eit
+\eit
+\end{frame}
+\subsection{Saving Academic Papers}
+\begin{frame}\ft{\insertsubsection}
+There are many ways to save things on the Internet.
+\bit
+\item Dropbox (Dropbox Paper, Dropbox Spaces)
+\item Google Drive, Google Keep, Google One
+\item Icedrive
+\item MEGA\footnote{\texttt{https://mega.nz/}}
+\item Pocket (saving bookmarks)\footnote{\texttt{https://getpocket.com/}}
+\item Onedrive
+\item 4sync
+\item 4shared
+\eit
+But there are better options for academic papers.
+\end{frame}
+\begin{frame}\ft{\insertsubsection}
+These are tools to save academic papers.
+\bit
+\item Mendeley
+\item RefWorks
+\item colwiz
+\item EndNote
+\item ReadCube
+\item RefMe
+\item Zotero
+\eit
+\bb{How they work}
+\bit
+\item Automatically detect publication data
+\item Suggest new papers to read
+\eit
+\eb
+\end{frame}
+\section{Data Backup}
+\begin{frame}\ft{\insertsection}
+Unexpected things happen before deadline !!!
+\begin{exampleblock}{}
+\bit
+\item Mistakes found before submission
+\item Computer breaks down
+\eit
+\end{exampleblock}
+Don't forget data backup !!!
+\end{frame}
+\subsection{\LaTeX}
+\begin{frame}\ft{\insertsubsection}
+There are many ways to save things on the Internet.
+\bit
+\item Dropbox
+\item Google Drive, Google Keep
+\item Icedrive
+\item MEGA
+\item Onedrive
+\item 4sync
+\item 4shared
+\eit
+But there are better options for \LaTeX.
+\end{frame}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsubsection}
+\footnotesize
+\bb{\small Online \TeX \quad compilers/tools}
+\bit
+\item Cloud \LaTeX, Overleaf\footnote{\texttt{https://overleaf.com/}}
+\item CoCalc\footnote{\texttt{https://cocalc.com/}}, Verbosus/VerbTeX\footnote{\texttt{https://www.verbosus.com/latex.html}}
+\item Messenger \LaTeX (Google Chrome extension)
+\eit
+\eb
+\bb{\small \LaTeX$\iff$pictures}
+\bit
+\item TeXclip\footnote{\texttt{https://texclip.marutank.net/}}, CodeCogs (also generates URL)\footnote{\texttt{https://www.codecogs.com/latex/eqneditor.php}}
+\item Mathpix (convert picture to \LaTeX)
+\item \LaTeX \quad From Web (Google Chrome extension)
+\eit
+\eb
+Moeditor: \LaTeX \quad version notepad (\LaTeX $+$ HTML)
+\normalsize
+\end{frame}
+\subsection{Source Codes}
+\begin{frame}\ft{\insertsubsection}
+There are many ways to save things on the Internet.
+\bit
+\item Dropbox
+\item Google Drive, Google Keep
+\item Icedrive
+\item MEGA
+\item Onedrive
+\item 4sync
+\item 4shared
+\eit
+But there are better options for source codes.
+\end{frame}
+\begin{frame}\ft{\insertsubsection}
+\footnotesize
+Here are tools to save source codes.
+\bit
+\item GitHub
+\item BitBucket (You can also make private repositories)
+\item Gitea\footnote{\texttt{https://gitea.io/en-us/}}
+\item GitLab
+\bit
+\item You can also make private repositories
+\item You can import from GitHub, BitBucket, Gitea etc.
+\eit
+\item Jupyter Notebook (Python, Julia, R are available)
+\item Dropbox Paper
+\item Slack (Snippets are available, many open source clones are known)
+\bit
+\item MatterMost
+\item Gitter
+\item Zulip
+\item Rocket.Chat
+\eit
+\item myCompiler (Compiler on your browser)\footnote{\texttt{https://www.mycompiler.io/}}
+\eit
+\normalsize
+\end{frame}
+\section{Tools to Search}
+\subsection{Wikipedia Alternatives}
+\begin{frame}\ft{\insertsubsection}
+\bb{Options}
+\bit
+\item nLab (about Science)\footnotetext{\texttt{https://ncatlab.org/nlab/show/HomePage}}
+\item Scholarpedia (about science)\footnotetext{\texttt{http://www.scholarpedia.org/article/Main\_Page}}
+\item Wolfram MathWorld
+\item Encyclopedia of Mathematics
+\eit
+\eb
+\end{frame}
+\subsection{Q\& A Sites}
+\begin{frame}\ft{\insertsubsection}
+\footnotesize
+\bb{\insertsubsection}
+\bit
+\item Quora (available in many languages)
+\item Stack Exchange (Includes many areas)
+\bit
+\item Mathematics (for students)/Math Overflow (high level)
+\item Mathematica
+\item Physics
+\item \LaTeX, \TeX
+\item Ubuntu
+\item Unix \& Linux
+\item Computer Science
+\item Computational Science
+\item Emacs
+\item Academia
+\item Stack Overflow$\to$Questions about Programming 
+\item Cross Validated
+\eit
+\eit
+\eb
+\normalsize
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
