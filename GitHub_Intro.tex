@@ -1,0 +1,230 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{cases}
+\usepackage{comment}
+\usepackage{color,colortbl}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{df}[thm]{Definition}
+\newtheorem{cor}[thm]{Corollary}
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\ft}{\frametitle}
+\newcommand{\ssec}{\subsection}
+\newcommand{\sss}{\subsubsection}
+\newcommand{\insec}{\insertsection}
+\newcommand{\iss}{\insertsubsection}
+\newcommand{\isss}{\insertsubsubsection}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\mathversion{bold}
+\title{Welcome 2 GitHub}
+\subtitle{GitHub Introduction and Tips}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}\\(Authorized Affiliate of VIA Programs\footnote{\texttt{http://viaprograms.org/}})}
+\date[November 2019]{November 2019 at our Learning Cafe}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\section{What is GitHub ?}
+\begin{frame}\ft{\insertsection}
+File storage \textcolor{green}{different from Dropbox}.
+\begin{alertblock}{Difference Between Dropbox}
+\begin{itemize}
+\item Made to save source codes (PDF can also be saved)
+\item Based on \textcolor{green}{Git}
+\item \textcolor{green}{GitHub Wiki, GitHub Pages, Gist} is available
+\item \textcolor{green}{GitHub Actions}: Compile on GitHub
+\item Social Networking Services
+\begin{itemize}
+\item Follow other users 
+\item Various communities exist
+\end{itemize}
+\item Other features
+\begin{itemize}
+\item Commit: Enter edit details
+\item Issue: Someone may help you about the programs
+\item Release: Notice about your creations
+\end{itemize}
+\end{itemize}
+\end{alertblock}
+\end{frame}
+\begin{frame}\ft{\insertsection}
+\begin{alertblock}{Common points with Dropbox}
+\begin{itemize}
+\item You can save in separate folders (directories)
+\item Upload by Drag \& Drop
+\item Saves indents in the Source Code
+\item Zip file download OK
+\end{itemize}
+\end{alertblock}
+\bb{}
+\texttt{sudo apt install git}$\to$Git available for Linux
+\eb
+\end{frame}
+\section{Why GitHub is used ?}
+\begin{frame}\ft{\insertsection}
+\begin{exampleblock}{\insertsection}
+\begin{itemize}
+\item Widely used by developers.
+\item Also used by researchers.
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{Who is using GitHub ?}
+\begin{frame}\ft{\insertsection}
+\begin{exampleblock}{Famous academic users}
+Sheehan Olver\footnote{\texttt{https://github.com/dlfivefifty}},\\ Nick Higham\footnote{\texttt{https://github.com/higham}}, Nick Trefethen\footnote{\texttt{https://github.com/trefethen}}$\cdots$
+\end{exampleblock}
+\begin{exampleblock}{Famous corporate users}
+Facebook\footnote{\texttt{https://github.com/facebook}}, Microsoft\footnote{\texttt{https://github.com/microsoft}}, Wolfram Research\footnote{\texttt{https://github.com/WolframResearch}}$\cdots$
+\end{exampleblock}
+\end{frame}
+\section{GitHub Wiki}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Wiki for yourself (Explain programs at here)
+\item Available for each GitHub repository.
+\item AsciiDoc, Markdown, MediaWiki, Textile is available
+\item Use Codecogs\footnote{\texttt{https://www.codecogs.com/latex/eqneditor.php}}$\to$math formulas are available.
+\eit
+\end{frame}
+\section{Gist}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Independent from Repository 
+\item Markdown available
+\item Source codes can be uploaded
+\item You can set private or public
+\eit
+\end{frame}
+\section{GitHub Pages}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+Website maker on GitHub.
+\bb{How to use}
+\begin{center}
+Install GitHub Desktop (free)\\
+$\downarrow$\\
+Make repository named \texttt{username.github.io}\\
+$\downarrow$\\
+Make \texttt{index.html} on local\\
+$\downarrow$\\
+\texttt{https://username.github.io} is made !!!
+\end{center}
+\eb
+Not only Codecogs but also MathJax is OK !!!
+\bb{Even you don't know HTML $\cdots$}
+\begin{center}
+Prepare your website on Google Site \\
+$\downarrow$\\
+Use HTML converter on Google Site\\
+$\downarrow$\\
+Paste to GitHub Pages !!!
+\end{center}
+\eb
+\normalsize
+\end{frame}
+\section{Refined GitHub}
+\begin{frame}\ft{\insertsection}
+Google Chrome/Firefox extension.
+\begin{exampleblock}{Features}
+\begin{itemize}
+\item User icon on reaction
+\item Indent on comment
+\item Open all issues at once 
+\item useful 404 page
+\end{itemize}
+\end{exampleblock}
+cf: Refined BitBucket
+\end{frame}
+\begin{frame}\ft{Other Extensions}
+\begin{exampleblock}{Other Extensions}
+\begin{itemize}
+\item Hacker Tab (GitHub Trends on Tab)
+\item OctoLinker 
+\item OctoTree (GitHub Source Code Tree on Screen)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{Extra: GitHub-like Services}
+\begin{frame}\ft{\insertsection}
+\bit
+\item BitBucket
+\item GitLab\footnote{\texttt{https://gitlab.com/}}
+\item Gogs\footnote{\texttt{https://gogs.io/}}, Gitea\footnote{\texttt{https://gitea.io/en-us/}} (Based on Go Language)
+\eit
+\bb{Features}
+\bit
+\item Import/Export available from GitHub.
+\item based on Git.
+\eit
+\eb
+\end{frame}
+\section{Extra: Things Similar to Git}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Mercurial\footnote{\texttt{https://www.mercurial-scm.org/}}
+\item SourceForge\footnote{\texttt{https://sourceforge.net/}}
+\item Apache Subversion\footnote{\texttt{https://subversion.apache.org/}}
+\eit
+\end{frame}
+\section{References}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{GitHub}
+\bit
+\item Introducing GitHub, A Non-Technical Guide, Peter Bell and Brent Beer (2014)
+\item Building Tools with GitHub-Customize Your Workflow, Chris Dawson and Ben Straub (2016)
+\item Introduction to Git and GitHub, Develop software, track codebase changes, and share and optimize software collaboration, Alex Magana and Joseph Muli (2018)
+\item GitHub Essentials, Unleash the power of collaborative development workflows using GitHub (2nd Edition), Achilleas Pipinellis (2018)
+\item Git and Github Guide-The Basics, Jerry N. P. (2018)
+\eit
+\eb
+\bb{GitLab}
+\bit
+\item GitLab Cookbook, Jeroen van Baarsen (2014)
+\item GitLab Quick Start Guide, Migrate to GitLab for all your repository management solutions, Adam O'Grady (2018)
+\eit
+\eb
+\normalsize
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
