@@ -1,0 +1,225 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{color,cases,comment,ulem}
+
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\mathversion{bold}
+
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\ft}{\frametitle}
+
+\title{Slack News 2019 Version}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}\\(Authorized Affiliate of VIA Programs\footnote{\texttt{http://viaprograms.org/}})}
+\date[November, 2019]{November, 2019 at our Learning Cafe}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\begin{frame}\ft{Introduction}
+\footnotesize
+\bit
+\item Slack users are increasing.
+\item Not only companies/institutes but also students are using.
+\item Restrictions to free users may be tighten.
+\item So we checked free/non-expensive alternatives.
+\eit
+\bb{Famous Slack Alternatives}
+\bit
+\item Google Groups
+\item DingDing (China Version Slack)
+\item Microsoft Teams (Maybe Expensive)
+\item ChatWork\footnote{\texttt{https://go.chatwork.com/}}
+\eit
+\eb
+\normalsize
+\end{frame}
+\section{Open Source Softwares}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{Open Source Softwares}
+\bit
+\item Gitter (by GitLab)
+\item Hexchat, rocket.chat, Zulip, MatterMost
+\eit
+\eb
+\bb{Issues}
+\bit
+\item Prepare server by yourself.
+\item Export/Import Slack data
+\item Availability of extensions
+\eit
+\eb
+\bb{Slack$\to$MatterMost}
+Private Channel \& Direct Message $\to$ Export unavailable
+\eb
+\bb{Users}
+\footnotetext{\texttt{https://mattermost.com/customers/}}
+Airbus, Deloitte, Intel, NASA, NRI, Samsung, Uber,$\cdots$ 
+\eb
+\normalsize
+\end{frame}
+\section{Slack Export}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Discord, Gitter, Rocket.Chat, Zulip can import Slack\footnote{\texttt{https://rocket.chat/docs/administrator-guides/import/slack/}}\textsuperscript{,}\footnote{\texttt{https://zulipchat.com/help/import-from-slack}}.
+\item ''Slack doesn't export private channels or direct messages unless you pay for Slack Plus or contact Slack support.''
+\item ''Slack doesn't export user settings or organization settings, so you'll need to configure these manually.''
+\eit
+\end{frame}
+\section{Products from Facebook}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{\small Benefits}
+\bit
+\item Facebook Groups: Private group can be created
+\item Facebook Note
+\item Albums$\to$ Alternative of Flickr
+\item Member tag available.
+\item Facebook Messenger (Group Chat OK)
+\eit
+\eb
+\bb{\small Issues}
+\bit
+\item Account required
+\item Subgroup may not be created
+\item Unavailable in China
+\item Cannot send message to yourself
+\item PDF upload unavailable
+\eit
+\eb
+\normalsize
+\end{frame}
+
+\begin{frame}\ft{\insertsection}
+Now we have a Facebook version Slack !!!
+\bb{Workplace by Facebook}
+\footnotetext{\texttt{https://ferret-plus.com/7547}}
+\footnotetext{\texttt{https://jp.techcrunch.com/2017/05/18/facebook-workplace/}}
+\footnotetext{\texttt{https://www.itmedia.co.jp/business/articles/1802/19/news071.html}}
+\footnotetext{\texttt{https://www.itmedia.co.jp/business/articles/1802/19/news071\_2.html}}
+\bit
+\item Starbucks, Air Asia and many others are using
+\item Non-profits \& Schools $\to$ premium plan is free
+\item Event, markdown, subgroup, group talk is available
+\eit
+\eb
+\bb{Issues}
+How can we import slack ?
+\eb
+\end{frame}
+\section{Products from Google}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{Finished Google services}
+Google Code, Google, Inbox$\cdots$
+\eb
+But Google started something new !!!
+\bb{New services}
+\bit
+\item Google Hangouts Chat (Google version Slack)
+\item Google One (Expensive version of Google Drive)
+\eit
+\eb
+\bb{Caution}
+Google is ending free services and trying to make us pay\footnotetext{\texttt{https://www.chinadailyhk.com/articles/166/104/22/1571911589325.html}}.
+\eb
+\normalsize
+\end{frame}
+\section{Discord}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{}
+\bit
+\item Made for gamers\footnote{\texttt{https://discordapp.com/}} (snippet, file upload OK)
+\item Import/export between Slack-Discord   \footnote{\texttt{https://discord.karmabot.chat/}}\textsuperscript{,}\footnote{\texttt{https://www.producthunt.com/posts/discord-slack}}
+\item Used by Gitea developers\footnote{\texttt{https://gitea.io/en-us/}} (Also used in the crypto community)
+\item Private Channel OK
+\eit
+\eb
+\bb{Rivals (Discord seems to be better)}
+Skype, Ventrilo, TeamSpeak (\texttt{https://www.teamspeak.com/en/})
+\eb
+\normalsize
+\end{frame}
+\section{Band}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\bb{}
+\footnotetext{\texttt{https://band.us/ja}}
+\footnotetext{\texttt{https://blog.band.com/band-vs-slack-556d6b765de8}}
+\bit
+\item New app
+\item There are Many ads about Band
+\item Unlimitedly free
+\eit
+\eb
+\bb{Issues}
+How can we import slack ?
+\eb
+\end{frame}
+\section{Related tools}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\bb{SlackDeck (Made in Japan, see also GitHub/SpeakerDeck)}
+Slack $+$ TweetDeck (Google Chrome extension, Open Source)
+\eb
+\bb{Rambox (Open Source)}
+\footnotetext{\texttt{https://rambox.pro/}}
+\bit
+\item Gmail, Facebook Messenger, Outlook, Skype, Slack handled in one app
+\item Station (\texttt{https://getstation.com/})$\to$Free
+\eit
+\eb
+\bb{Shift (Very Expensive)}
+\footnotetext{\texttt{https://tryshift.com/}}
+Reinforced version of Rambox (Not only Message's but also SNS)
+\eb
+\end{frame}
+\section{Conclusion}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\bb{}
+Prepare your own server and use MatterMost, Gitter, Zulip etc. !!!
+\eb
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
