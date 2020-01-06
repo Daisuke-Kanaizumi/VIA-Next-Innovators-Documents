@@ -1,0 +1,228 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+% reference
+% https://github.com/munepi/texworks-templates-japanese
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{cases}
+\usepackage{comment}
+\usepackage{color,colortbl}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{df}[thm]{Definition}
+\newtheorem{cor}[thm]{Corollary}
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\ft}{\frametitle}
+\newcommand{\ssec}{\subsection}
+\newcommand{\sss}{\subsubsection}
+\newcommand{\insec}{\insertsection}
+\newcommand{\iss}{\insertsubsection}
+\newcommand{\isss}{\insertsubsubsection}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\mathversion{bold}
+\title{英語学習に関するメモ}
+\subtitle{Notes about studying English}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}}
+\date[2020年1月]{2020年1月, ＠ Learning Cafe}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\section{役立つ書籍}
+\begin{frame}\frametitle{\insertsection}
+英語学習を助ける書籍は色々ある. 大まかに分けるとこんな感じ:
+\begin{itemize}
+\item 辞書 (英和・和英・英英・電子辞書)
+\item 文法書
+\item 単語帳
+\end{itemize}
+\end{frame}
+\subsection{辞書}
+\begin{frame}\frametitle{\insertsubsection}
+言語学習には辞書は欠かせない. 紙の辞書は作業場においておく分には十分使い勝手がいいと思う.
+\begin{exampleblock}{使ったことのある辞書}
+\begin{itemize}
+\item Longman (英英・英和, Webでも使える)
+\item ジーニアス (英和・和英)
+\item 理化学英和 (研究社)
+\item 数学英和小辞典 (講談社)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\subsection{電子辞書}
+\begin{frame}\frametitle{\insertsubsection}
+電池さえ気にならなければ持ち運びが便利でいろんな辞書を一括検索できる電子辞書もすごく便利だと思う.
+\begin{exampleblock}{主な業務用電子辞書 by CASIO}
+\begin{itemize}
+\item XD-SR20000 (Professional model)
+\item XD-SR9800 (英語特化)
+\item XD-SR5700MED, XD-SR5900MED (医学用)
+\item XD-SR9850 (理化学)
+\end{itemize}
+\end{exampleblock}
+他社でも同様の電子辞書はあるはず.
+\end{frame}
+\subsection{文法書}
+\begin{frame}\frametitle{\insertsubsection}
+文法書も持っておくと心強いだろう.
+\begin{exampleblock}{使ったことのある辞書}
+\begin{itemize}
+\item ロイヤル英文法 (旺文社)
+\item Forest第7版 (桐原書店) 
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+
+\subsection{単語帳}
+\begin{frame}\frametitle{\insertsubsection}
+専門的な単語は普通の辞書やWebで調べても出てこないことがあるので, 専門的な単語帳があれば安心だろう.
+\begin{exampleblock}{使ったことのある単語帳}
+\begin{itemize}
+\item 話題別英単語リンガメタリカ (Z会)
+\item 速読速聴英単語 Advanced 1000 (Z会)
+\item IT の英語 (アルク)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{役立つ Website}
+\begin{frame}\frametitle{\insertsection}
+\footnotesize
+\bb{Weblio}
+恐らく日本で一番使われる辞書サイト. 色んな辞書を一括検索できる.
+\eb
+\begin{exampleblock}{その他の辞書}
+\begin{itemize}
+\item American Heritage Dictionary
+\item Cambridge Dictionary
+\item Longman Dictionary of Contemporary English Online
+\item Merriam-Webster
+\item Oxford English Dictinoary
+\end{itemize}
+\end{exampleblock}
+\begin{exampleblock}{その他のサイト}
+\begin{itemize}
+\item Academic Phrasebank
+\item Acronym Finder
+\item AntConc
+\item Corpus of Contemporary American English
+\item Springer Exemplar
+\end{itemize}
+\end{exampleblock}
+
+\normalsize
+\end{frame}
+\section{役立つ拡張機能}
+\begin{frame}\frametitle{\insertsection}
+Google Chrome に対応した拡張機能を紹介しよう.
+\begin{exampleblock}{使っている拡張機能}
+\begin{itemize}
+\item Google Dictionary
+\item Grammarly (自動で文法をチェックしてくれる)
+\item Power Thesaurus (類語検索)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{英語圏の報道機関}
+\begin{frame}\frametitle{\insertsection}
+\footnotesize
+英語のニュースを読んで時事英語に強くなろう.
+\begin{exampleblock}{主な英語メディア}
+\begin{itemize}
+\item Bloomberg News
+\item Foreign Affairs
+\item Politico
+\item Reuters
+\item The Associated Press
+\item The Atlantic
+\item The Economist
+\end{itemize}
+\end{exampleblock}
+\begin{exampleblock}{主な英国メディア}
+\begin{itemize}
+\item BBC
+\item Financial Times
+\item Guardian
+\end{itemize}
+\end{exampleblock}
+\normalsize
+\end{frame}
+\begin{frame}\frametitle{\insertsection}
+\footnotesize
+\begin{exampleblock}{主な米国メディア}
+\begin{itemize}
+\item CNBC
+\item CNN
+\item FOX News
+\item The New Yorker
+\item The New York Times
+\item The Wall Street Journal
+\item The Washington Post
+\item USA Today
+\item Voice of America
+\end{itemize}
+\end{exampleblock}
+\normalsize
+\end{frame}
+\begin{frame}\frametitle{\insertsection}
+\footnotesize
+\begin{exampleblock}{主な英語メディア (アジア圏)}
+\begin{itemize}
+\item Aljazeera (中東)
+\item Channel News Asia, Straits Times (シンガポール)
+\item Economic Times (インド)
+\item Epoch Times, South China Morning Post (中国系)
+\item Japan Times, Nikkei Asian Review (日本)
+\end{itemize}
+\end{exampleblock}
+\begin{exampleblock}{理系の英語メディア}
+\begin{itemize}
+\item Discovery
+\item MIT Technology Review
+\item National Geographic
+\item Scientific American
+\end{itemize}
+\end{exampleblock}
+
+\normalsize
+\end{frame}
+
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
