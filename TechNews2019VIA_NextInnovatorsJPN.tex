@@ -1,0 +1,223 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+% reference
+% https://github.com/munepi/texworks-templates-japanese
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{color,cases,comment,ulem}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\mathversion{bold}
+
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\ft}{\frametitle}
+
+\title{科学技術関連情報 2019年版}
+\subtitle{Selected Tech News 2019}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}\\(Authorized Affiliate of VIA Programs\footnote{\texttt{http://viaprograms.org/}})}
+\date[November 2019]{November 2019 ＠ Learning Cafe}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\section{新刊情報}
+\begin{frame}\ft{\insertsection}
+読書の秋なので気になった科学書籍を紹介します.
+\begin{exampleblock}{伝説の教科書たちが「朝倉復刊セレクション」として帰ってくる !!!
+}
+\footnotetext{\texttt{http://www.asakura.co.jp/books/isbn/978-4-254-11844-8/}}
+\footnotetext{\texttt{http://www.asakura.co.jp/books/isbn/978-4-254-11846-9/}}
+\bit
+\item ''常微分方程式, 朝倉書店, 高野恭一.''
+\item ''非線型数学, 朝倉書店, 増田久弥.''
+\eit
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\bit
+\item Stephen Wolfram が久しぶりに本を出します !!!
+\item ''Adventures of a Computational Explorer''
+\item 期待しましょう !!!
+\eit
+\end{frame}
+\section{行楽情報}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+行楽の秋なので科学関連の行楽情報を紹介します.
+\bit
+\item 駐日EU代表部で数学の写真展があります (日本数学会後援)
+\item 麻布十番駅から徒歩17分$\to$いい運動になる !!!
+\item 目の保養 \& 息抜きなる !!!
+\eit
+\bb{}
+\begin{quote}
+\bit
+\item 日時：10月10日（木）～11月1日（金）(※土日祝を除く)\\$\to$無事に終了しました.
+\item \sout{時間：10:00 ～ 17:00（最終日の受付は12:00まで）}\\$\to$無事に終了しました.
+\item 場所：駐日EU代表部
+\item 入場：\sout{無料 \& 事前登録不要. ただし写真付きIDを受付に預けゲストブックにサインする.}\\$\to$無事に終了しました.
+\eit
+\end{quote}
+\eb
+\end{frame}
+\setbeamerfont{frametitle}{size=\small}
+\section{Open Access Week 特集}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bit
+\item \sout{10月には Open Access Week があるらしいです !!!}\\$\to$無事に終了しました.
+\item これにあわせ Elsevier 社は15年に渡る Open Access 活動をまとめている
+\item みんなのために Open Access に関連したものをまとめてみた (全部合法)
+\eit
+\begin{exampleblock}{Open Access に関連したもの一覧}
+\bit
+\item arXiv
+\item doaj.org (Open Access 限定検索)
+\item PubPeer (論文専用「はてな bookmark」)
+\item SpringerOpen
+\item Google Chrome/Firefox 拡張機能 (論文の合法的な無料版に飛ばしてくれる)
+\bit
+\item Open Access Button
+\item Unpaywall
+\eit
+\item 研究者専用SNS (iOS にも対応)$\to$論文が無料で入手できる
+\bit
+\item academia.edu
+\item ResearchGate
+\eit
+\eit
+\end{exampleblock}
+\normalsize
+\end{frame}
+\section{新型OS登場}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+''Windows 10X'' が来年登場するそうです\footnote{\texttt{https://www.itmedia.co.jp/pcuser/articles/1910/28/news043.html}} !!!
+\bb{出回っている情報}
+\bit
+\item ほぼ無償で使える
+\item Chrome OS への対抗策
+\eit
+\eb 
+Microsoft 社からの公式発表に期待しよう !!!
+\bb{それでも満足できない人のために}
+\footnotetext{\texttt{https://ascii.jp/elem/000/001/969/1969024/}}
+PowerToys: Windows 10 を改造する道具らしい (GitHub も参照)
+\eb
+\end{frame}
+\section{myCompiler}
+\begin{frame}\ft{\insertsection}
+ついに C++, C言語などをBrowser 上で動かせるようになった !!!
+\bb{myCompiler を試しに使ってみた感想}
+\bit
+\item 確かに使いやすいし速い
+\item Header file は使えないみたい・・・
+\item private directory は作れないみたい・・・
+\eit
+\eb
+授業などで紹介する価値はあるかもしれない.
+\end{frame}
+\section{Visual Studio}
+\begin{frame}\ft{\insertsection}
+\begin{alertblock}{}
+\bit
+\item Visual Studio 2019 が登場 !!!
+\item Visual Studio Online も登場 !!!
+\eit
+\end{alertblock}
+\bb{Visual Studio Online}
+\bit
+\item Microsoft, GitHub account を作れば使える
+\item version 管理できる
+\item 公開範囲を設定できる
+\item Browser 上で Compile もできるらしい
+\eit
+\eb
+\end{frame}
+\section{Blawn}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\bit
+\item 開成中学校の3年生が新言語「Blawn」を開発して表彰された (4冠達成)\footnote{\texttt{https://www.bcnretail.com/market/detail/20191021\_142131.html}}.
+\item C++を元に開発したそうです (GitHub 参照)
+\item 従って演算子多重定義もできるはず
+\item 「Blawn による区間演算 library 開発」$\to$夢ではないはず 
+\eit
+\bb{開発の動機}
+\bit
+\item 可読性向上
+\item memory 安全性向上
+\item 速度向上
+\eit
+\eb
+\bb{}
+Rust と比べてみるのも面白いのかも
+\eb
+\end{frame}
+\section{AI$\times$誤差評価}
+\begin{frame}\ft{\insertsection}
+ついにAIが誤差評価された !?!?!?\footnote{\texttt{https://www.weeklybcn.com/journal/news/detail/20191028\_170451.html}}
+\bb{}
+\begin{quote}
+富士通研究所は、AI運用時の入力データの正解付けを自動化することで、AIの精度の推定とAIモデルの自動修復を可能にする技術「High Durability Learning」を、世界で初めて開発した。今回開発した技術により、AIモデルを高い精度で長期間維持し、さまざまな業務で安定したAI運用を実現できる。今後は同技術を富士通のAI技術「FUJITSU Human Centric AI Zinrai」に活用していく。
+\end{quote}
+\eb
+
+\bb{背景}
+\bit
+\item EU が制定した GDPR では AI の結果に異議を唱える権利が認められている
+\item AI に対する誤差評価に注目が集まっている
+\eit
+\eb
+\end{frame}
+\section{世界冠廷科学賞}
+\begin{frame}\ft{\insertsection}
+Nobel 賞よりすごい賞ができるらしい\footnote{\texttt{https://www.j-cast.com/kaisha/2019/10/25371031.html}} !!!
+\bit
+\item 数理物理学賞・応用工学賞などがある
+\item 2022 年から開始
+\item Fields 賞などと違って年齢制限もないらしい
+\item 韓国の財閥が作った賞である
+\item 日韓関係が改善すれば日本人も受賞できるかも !?
+\eit
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
