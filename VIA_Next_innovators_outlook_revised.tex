@@ -1,0 +1,174 @@
+\documentclass[dvipdfmx,11pt]{jsarticle}
+\usepackage{amsmath,amsthm,amssymb,amscd,latexsym,tikz}
+\usetikzlibrary{shadows}
+\usepackage{ascmac,array}
+\usepackage{setspace,subcaption}
+\usepackage{cases,color,colortbl}
+\usepackage{fancybox}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{listings}
+\usepackage{cite,comment}
+\usepackage[top=25truemm,bottom=25truemm,left=30truemm,right=30truemm]{geometry}
+
+\makeatletter
+    \renewcommand{\theequation}{%
+    \thesection.\arabic{equation}}
+    \@addtoreset{equation}{section}
+  \makeatother
+\newcommand{\tc}{\textcolor}
+\newcommand{\ssec}{\subsection}
+\newcommand{\sss}{\subsubsection}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\todaye}{\the\year--\the\month--\the\day}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\vspace*{130truept}
+{\LARGE VIA Next Innovators Outlook (Revised Ver.)}\\
+\vspace{20truept}
+\textgt{改訂版VIA Next Innovators 概要書}\\
+\vspace{20truept}
+{\Large Jan. 2020, VIA Next Innovators}\\
+\vspace{20truept}
+\begin{figure}[h]
+\includegraphics{VIANI.jpg}
+\end{figure}
+
+\end{center}
+\end{titlepage}
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\section{設立及び活動を続ける背景}
+私たちが暮らしているこの地球社会には様々な問題があります。戦争・内戦・宗教や民族の違いによる対立、大量破壊兵器の存在、テロリズム、独裁、差別、貧困や自然破壊・異常気象をはじめ、発展途上国への支援の不足、人権問題などその種類はあまりに多く、依然解決されずにその多くがいまこうしている間にも私たち人類の生活を苦しめ、安全と財産を脅かしています。
+\par
+幸いながら既に各々の関心に沿って様々な社会課題に取り組んでいる勇猛果敢な方々もいらっしゃいますが、残念ながら必ずしも十分な人数がいるとは言えないのが実情です。また、たった一人の人間がそれらすべての社会課題の解決に向けて動くことはたとえどんなに長い時間をかけて努力しても事実上不可能といわざるを得ません。だからといって問題として存在しているものをそのまま看過・黙殺すべきではありません。つまり私たちの社会は、社会課題に対して関心・知識・危機感を持ちその解決に向けて積極的に活動する人財を更に多く・強く緊急要請しているのです。
+\par
+こうした現実を踏まえ、弊団体はアメリカのサンフランシスコにある教育系NPO法人VIA (Volunteers in Asia, \texttt{http://viaprograms.org/}) のESI (Exploring Social Innovation)＆DSI (Design-Thinking for Social Innovation) プログラム修了生たちにより2015年7月に設立されました。弊団体は問題解決のために動く人々を増やし強く繋げることで、私たちの社会やそこにいる人々が自らの行動力・可能性を高め、人々の人生における選択肢が狭められたり侮辱されたりすることのない輝かしい地球社会の実現に貢献するという断固たる揺るぎない決意のもと、様々な活動を展開していきます。
+\par
+VIA Next Innovators はVIA本部を顧問的存在と位置づけ、後述するVision \& Mission の達成、そしてVIA本部を補佐するべく活動を展開していきます。
+\section{Vision \& Mission}
+\subsection{Vision}
+\textcolor{blue}{ソーシャル・イノベーターを増やし、つなげることで、我々の地球社会に貢献する。}\\
+（本文におけるソーシャル・イノベーター\footnote{「ソーシャル・イノベーション」には様々な定義がある\cite{open,new}。}とは「創造的かつ共感性をもった活動を展開することで、社会やそこにいる人々の潜在的可能性が最大化することを目指している人々」を指す。）
+\subsection{Mission}
+Mission 1: VIAの提供するSocial Innovation Program へ情熱をもった多様な人材を送る。\\
+
+Mission 2: VIAの提供するSocial Innovation Program 修了生を繋ぐ （追記：VIA自体もSocial Innovation Program 修了生を繋ぐ活動を行っているので、その支援も行う）\\
+
+Mission 3: Social Innovationに有益なツールを体験・練習できる種々の機会を提供して、新たな一歩を踏み出すことを後押しする (追記：この Mission の一環として Slideshare, SpeakerDeck, Slides, GitHub, GitLab 等を運用しています)\\
+
+Mission 4: VIA Social Innovation Program 修了生によるプロジェクトをサポートする。
+\section{Ground Rules}
+\subsection{意思疎通}
+\begin{itemize}
+\item その場で意見が少ない人へのフォロー
+\item 論破ではなく創造的に
+\item 傾聴 (Empathy Listening\cite{power})
+\item 自分の発言に責任をもつ
+\item 全員が自分の意見・立場を明らかにする
+\item 人格の尊重
+\item 相手の意見をまとめてから発言する (発言者の意図を理解する)
+\end{itemize}
+\subsection{最低限の礼儀}
+挨拶と時間厳守を徹底する。
+\subsection{情報}
+\textcolor{blue}{情報公開・情報管理・情報発信を徹底する。}
+\subsection{心構え}
+\begin{itemize}
+\item 目標を見失わない
+\item 主体的に
+\item 楽しむ気持ちを忘れない
+\item 失敗を恐れない
+\item 率先して行動する
+\end{itemize}
+\subsection{役割}
+\begin{itemize}
+\item 役割分担を明確化する
+\item 対等な関係性を保つ
+\item 意に反するタスクの偏りをなくす
+\item 他者支援を意識する
+\end{itemize}
+\section{構造と活動領域}
+VIA Next Innovators の活動領域は以下の通りです。
+\begin{itemize}
+\item 日本語圏と英語圏のインターネット空間、各種SNSも含みます。
+\item 日本語圏の都市部 （この領域での総本山は東京をはじめとする首都圏であり、VIA Next Innovators Tokyo (VIA NIT)として知られています。）
+\end{itemize}
+VIA Next Innovators には代表者とその代理 (正規メンバーに限る) の他に広報\footnote{メインのウェブサイト以外にも、各種SNS (Facebook, Instagram, etc.) や様々な知識共有媒体 (SlideShare, SpekaerDeck, slides.com, GitHub, GitLab, BitBucket, etc.) の運用を行う。またインターネット上の催事も担当します。}・総務・資産管理\footnote{予算と各種情報資源の管理を担当します。}・企画\footnote{現実世界での催事を担当します。}・渉外\footnote{広報と連携して連絡フォームの維持管理もします。}などの担当者 (及び担当者を補佐するメンバー・協力者) が配置されます。担当の兼任も認められます。首都圏を除く他地域で人的規模が拡大した場合には地域限定の部門を設置することがある。
+\section{定款 (抜粋)}
+\subsection{はじめに}
+定款は2015年7月の設立時に制定されました。制定から5年以上経過した今、組織の現状や社会の実情に合わないところがあります。例えば当初の定款は会議への出席を大前提としてました。しかし現在では当時と比べてテレビ会議の技術が圧倒的に発達し (Skype, Slack, Zoom, etc.)、社会全体も「会議を必要最小限に抑える」方向に向かっています。よってこのような規定は社会の流れにあっていないとも言えます。ここからは現在でも通用する条文のみを示します。
+\subsection{原文}
+第一章 名称\\
+第1条: 本組織はVIA Next Innovators （ヴィア・ネクスト・イノベーターズ） と称する。
+\par
+第二章 目的と事業\\
+第2条: 本組織は日本においてSocial Innovatorを増やし繋げることを通じて、地球社会に貢献することを目的とする。
+\par
+第3条: 本組織においてSocial Innovatorは、社会やそこにいる人々の可能性を拡大させるために創造的かつ本質的な活動を展開する人々を指す。
+\par
+第4条: 本組織は前条の目的を達成するために次の事業を行う。
+\begin{enumerate}
+\item 米国NPO法人VIAの提供するSocial Innovationに関わるプログラムへの参加者を増やすために種々の活動を展開する。
+\item 米国NPO法人VIAの提供するSocial Innovationに関わるプログラム修了生の間に繋がりを構築する。
+\item 本組織はメンバーがデザイン思考\cite{how,why,research,biz,strategy}や英語など社会問題にアプローチするために必要な手法\footnote{他にも以下を有益な手法として注視しています:
+\begin{itemize}
+\item Brainstorming\cite{ctb}
+\item Community Organizing\cite{dev,build}
+\item Meditation
+\item Mindfulness\cite{art,psy,mili,search}
+\end{itemize}
+}を実践的に学ぶ。また、その機会を提供する。
+\item 本組織のメンバーは創造的な活動を展開するよう努力するとともに、種々の活動のプロセスを楽しみながら最大限のものを学ぼうとする姿勢を保持する。
+\end{enumerate}
+第三章 メンバー\\
+第5条: 本組織に入る際は次のいずれかの条件を満たさなければならない\footnote{この制約は管理者権限を有する正規メンバーに対するものである。客員メンバーや外部協力者はこの制約を受けない}。
+\begin{enumerate}
+\item VIAの提供するSocial Innovationに関わるプログラム\footnote{例えば ESI, DSI,XSEL 等が含まれる.}を修了していること。
+\item VIAの提供するSocial Innovationに関わるプログラムのコーディネーター、フェロー等に就任経験があり運営に携わったことがあること\footnote{例えば Program Coordinator, Education Fellow, Alumni Event Manager, Alumni Ambassador が含まれる.}。
+\item VIAの提供する他のプログラム修了生\footnote{ALC またはMedical Program などがある。}もメンバーになることはできるが、その際は代表あるいは副代表と面談をし、該当代の代表あるいは副代表の判断に依る\footnote{代表あるいは副代表が不在の場合、現役の正規メンバーたちが判断する。}。
+\end{enumerate}
+第6条: 本組織から退会しようとするメンバーは、その旨を本組織に申し出るものとする。\\
+第7条: 次にあげる事項をメンバーが行った場合、代表及び副代表は協議のうえでそのメンバーを本組織から脱退させることができる。
+\begin{enumerate}
+\item 日本国における法律の明確な違反\footnote{VIA の所在地である米国の連邦法やカルフォルニア州法、そしてVIA本部の理念も尊重します。}
+\item 本組織定款の意図的な違反
+\end{enumerate}
+\begin{thebibliography}{99}
+\bibitem{open}
+Murray, R., Caulier-Grice, J., \& Mulgan, G. (2010). The open book of social innovation. London: National endowment for science, technology and the art.
+\bibitem{new}
+Nicholls, A., Simon, J., Gabriel, M., \& Whelan, C. (Eds.). (2015). New frontiers in social innovation research. Springer.
+\bibitem{power}
+Rakel, D. (2018). The Compassionate Connection: The Healing Power of Empathy and Mindful Listening. WW Norton \& Company.
+\bibitem{how}
+Cross, N. (2011). Design thinking: Understanding how designers think and work. Berg.
+\bibitem{why}
+Martin, R., \& Martin, R. L. (2009). The design of business: Why design thinking is the next competitive advantage. Harvard Business Press.
+\bibitem{research}
+Plattner, H., Meinel, C., \& Leifer, L. (Eds.). (2012). Design thinking research. Springer.
+\bibitem{biz}
+紺野登. (2010). ビジネスのためのデザイン思考. 東洋経済新報社.
+\bibitem{strategy}
+奥出直人. (2012). デザイン思考と経営戦略. NTT 出版.
+\bibitem{ctb}
+Rawlinson, J. G. (2017). Creative thinking and brainstorming. Routledge.
+\bibitem{dev}
+Rubin, H. J., Rubin, I., \& Doig, R. (1992). Community organizing and development. New York: Macmillan.
+\bibitem{build}
+Gittell, R., \& Vidal, A. (1998). Community organizing: Building social capital as a development strategy. Sage publications.
+\bibitem{art}
+Shapiro, S. L., \& Carlson, L. E. (2009). The art and science of mindfulness: Integrating mindfulness into psychology and the helping professions. American Psychological Association.
+\bibitem{psy}
+Germer, C., Siegel, R. D., \& Fulton, P. R. (Eds.). (2016). Mindfulness and psychotherapy. Guilford Publications.
+\bibitem{mili}
+世界のトップエリートが実践する集中力の鍛え方: ハーバード、Google、Facebookが取りくむマインドフルネス入門、荻野 淳也、 木蔵シャフェ君子、吉田 典生／日本能率協会マネジメントセンター (2015/7/31)
+\bibitem{search}
+サーチ・インサイド・ユアセルフ: 仕事と人生を飛躍させるグーグルのマインドフルネス実践法、チャディー・メン・タン／英治出版 (2016/5/17)
+\end{thebibliography}
+\end{document}
