@@ -1,0 +1,163 @@
+% !TEX TS-program = platex
+%!TEX encoding = Shift-JIS
+% reference
+% https://github.com/munepi/texworks-templates-japanese
+\documentclass[dvipdfmx,10pt]{beamer}
+
+
+\ifnum 42146=\euc"A4A2 %"
+\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}%
+\else
+\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}%
+\fi
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{pxjahyper}
+\usepackage{cases}
+\usepackage{comment}
+\usepackage{color,colortbl}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{df}[thm]{Definition}
+\newtheorem{cor}[thm]{Corollary}
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\ft}{\frametitle}
+\newcommand{\ssec}{\subsection}
+\newcommand{\sss}{\subsubsection}
+\newcommand{\insec}{\insertsection}
+\newcommand{\iss}{\insertsubsection}
+\newcommand{\isss}{\insertsubsubsection}
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\usetheme{Berkeley}
+\usecolortheme{fly}
+\mathversion{bold}
+\title{2020年代事業計画 (暫定版)}
+\subtitle{Action plan for the 2020s Version 1}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}}
+\date[2020年1月]{2020年1月}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\section{計画概要}
+\begin{frame}\ft{\insertsection}
+\begin{itemize}
+\item 計画は数年後の姿とVision/Missionとの連動を前提に構築する.
+\item Vision/Mission は概要書に詳述されている.
+\item 数年後の姿は Vision/Mission に準じて定める.
+\item 数年後の姿を目指すための戦略も定める.
+\item (可能な限り) 各々の戦略を展開する上での具体的目標も作る.
+\item 行動指針 (構成員としての在り方) も決める (前回のものを継承)
+\item \textcolor{blue}{これらは前回と同様である}
+\end{itemize}
+
+\end{frame}
+\section{骨子}
+\begin{frame}{事業計画骨子 (2020年代)}
+\bb{数年後の姿}
+\begin{itemize}
+\item \textcolor{blue}{(日米の)若者たちの間で Social Innovation $=$ VIA Programs \& VIA Next Innovators という認識が広まっている.}
+\item ここでの「日本」は都市部に限定する (離島などは含めない)
+\item ここでの「米国」は米国本土の都市部に限定する (Alaska, Hawaii, 及びその他の自治領や海外領土は含めない)
+\item 「若者」は16-29歳を想定している.
+\item Network の起点となることも目指す.
+\end{itemize}
+\eb
+\end{frame}
+\begin{frame}{事業計画骨子 (2020年代)}
+\bb{戦略}
+\begin{itemize}
+\item 日米における VIA Programs \& VIA Next Innovators の認知度/知名度を向上する.
+\item 諸活動の活性化を図る.
+\item ESI/DSI 参加者水準の維持
+\end{itemize}
+\eb
+\begin{alertblock}{前回との変更点}
+増加$\to$維持
+\end{alertblock}
+\bb{変更理由}
+\begin{itemize}
+\item \textcolor{blue}{ESI/DSI は量ではなく質を重視している (だから選考がある)}
+\item 参加者数をやみくもに増やすことは無益と判断した.
+\item そもそも日本と周辺国では少子化が進んでいる.
+\end{itemize}
+\eb
+\end{frame}
+\section{具体的目標}
+\begin{frame}\ft{\insertsection}
+\bb{認知度向上のための目標}
+\begin{itemize}
+\item \textcolor{blue}{ウェブサイトのアクセス件数が年1000回以上}
+\item カウンターの他にも, Google Analytics, Google Search Console, Bing WebMaster Tools などで解析できる.
+\item SEO/SEM を徹底する.
+\item \textcolor{blue}{SlideShare 上の資料に対する閲覧数が1つにつき100回以上}
+\item \textcolor{blue}{Facebook, Instagram などに積極投稿する}
+\end{itemize}
+\eb
+\end{frame}
+\begin{frame}\ft{\insertsection}
+\begin{itemize}
+\item 参加者水準維持のため, 私たちが提供する各種資料の質を向上させる.
+\item 活動活性化のため, \textcolor{blue}{社会的に有意義な活動を日本語圏・英語圏のサイバー空間上で展開する}.
+\item さらに我々の思想とモデルを国内外に拡大させる.
+\end{itemize}
+\end{frame}
+\section{行動指針}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\begin{itemize}
+\item VIAの一員として誇りと自信を持つ
+\item ネットワークを拡大する
+\item VIAを正確に知る
+\item 熱意とプロ意識を持つ
+\item 向上心をもつ
+\item オンとオフを使い分ける
+\item 責任感を持つ
+\item 活動を楽しむ
+\item 情報公開と情報発信を徹底する
+\item 説明責任を果たす
+\item 透明性を担保する
+\item 結果を出す
+\item チャンスを逃さない
+\item 現状に満足しない
+\end{itemize}
+\normalsize
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\begin{itemize}
+\item 一昔前まで「報告・連絡・相談」が定番だった.
+\item \textcolor{blue}{しかしこれこそ人々を束縛していたとも指摘されている.}
+\item この手順に縛られないように, 概要書や行動指針ではあえてこの言葉の使用を避けている.
+\end{itemize}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
