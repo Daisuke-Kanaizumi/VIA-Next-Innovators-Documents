@@ -1,0 +1,264 @@
+% !TEX TS-program = platex
+%!TEX encoding = UTF-8
+\documentclass[dvipdfmx,10pt]{beamer}
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{bibliography item}[text]
+\usepackage{listings}
+\usepackage{amsmath,amsfonts,amsthm,latexsym}
+\usepackage{lmodern}
+\usepackage{hyperref,pxjahyper}
+\usepackage{cases}
+\usepackage{comment}
+\usepackage{color,colortbl}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{df}[thm]{Definition}
+\newtheorem{cor}[thm]{Corollary}
+\newcommand{\bb}{\begin{block}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\ft}{\frametitle}
+
+\usetheme{Berkeley}
+\usecolortheme{albatross}
+\setbeamercolor{structure}{fg=cyan}
+\setbeamercolor{title}{fg=white,bg=cyan}
+\setbeamercolor{author}{fg=cyan}
+\setbeamercolor{institute}{fg=cyan}
+\setbeamercolor{date}{fg=cyan}
+\setbeamercolor{frametitle}{fg=white,bg=cyan}
+\setbeamercolor{section in toc}{fg=cyan}
+\setbeamercolor{alerted text}{fg=cyan}
+\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamerfont{section in toc}{series=\mdseries}
+
+\hypersetup{ % hyperref option list
+setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=blue,
+ citecolor=cyan,
+}
+
+\mathversion{bold}
+\title{Welcome 2 ESI}
+\subtitle{Explore Social Innovation}
+\author[VIA Next Innovators Tokyo]{VIA Next Innovators Tokyo\footnote{\texttt{next\_innovators\_tokyo@viaprograms.org}}}
+\institute{Authorized Affiliate of \href{https://viaprograms.org/}{VIA Programs}}
+\date[Jan., 2020]{January, 2020}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{Outline}
+%https://tex.stackexchange.com/questions/231128/beamer-highlighting-subsubsections-in-toc
+  \setcounter{tocdepth}{3}  
+  \tableofcontents[
+    sectionstyle=show,
+    subsectionstyle=show/show,
+    subsubsectionstyle=show/show/show
+    ]
+\end{frame}
+\section{Abstract of ESI Program}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\bb{Organizer}
+VIA Programs (\texttt{https://viaprograms.org/})
+\eb
+\bb{Place}
+San Francisco Bay Area \& Silicon Valley, United States.
+\eb
+\bb{Timing}
+Every February and August (Approximately 10 days).
+\eb
+\bb{Events}
+\begin{itemize}
+\item Workshop at \href{https://dschool.stanford.edu/}{Stanford d.school}.
+\item Company visits (\href{https://en.wikipedia.org/wiki/YouTube
+}{YouTube}, \href{https://www.baycat.org/}{Baycat}, \href{https://www.kiva.org/}{Kiva},$\cdots$)
+\item Design Thinking \& Discussion Sessions.
+\item Sharpen your \href{https://en.wikipedia.org/wiki/Leadership}{Leadership}
+\item Exchange with Asian Students
+\end{itemize}
+\eb
+\normalsize
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Excellent Students will Gather From Asia.
+\begin{exampleblock}{Affiliations of past participants/coordinators}
+\begin{itemize}
+\item \href{https://www.u-tokyo.ac.jp/en/}{UT}, \href{https://www.kyoto-u.ac.jp/en/}{Kyoto}, \href{http://www.kyushu-u.ac.jp/en/}{Kyushu}, \href{https://www.osaka-u.ac.jp/en}{Osaka} (Top National Schools in Japan)
+\item \href{https://www.keio.ac.jp/en/}{Keio}, \href{https://www.sophia.ac.jp/eng/}{Sophia},$\cdots$ (Top Private Schools in Japan)
+\item \href{http://english.pku.edu.cn/}{Peking}, $\cdots$ (Top Schools in Mainland China)
+\item \href{https://www.ust.hk/}{HKUST}, \href{https://www.must.edu.mo/en}{MUST},$\cdots$ (Top Schools in HK \& Macau SAR)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Great Supporters are Waiting you.
+\begin{exampleblock}{People who can help you}
+\begin{itemize}
+    \item \href{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/english-version}{VIA Next Innovators} (based in Japan)
+    \item VIA Directors, Fellows \& Coordinators
+    \item Alumni Advisors \& Ambassadors
+    \item Community Outreach Managers
+    \item Mentors
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\begin{alertblock}{Required Preparations}
+\begin{itemize}
+\item Submit applications to VIA Programs
+\item Interview with ESI staff in English (You will be asked about your previous experiences, academic background, program participation motivations, and expectations)
+\item Pre-Program learning
+\item Self introduction to other members
+\item Obtain your passport, medical insurance, and \href{https://esta.cbp.dhs.gov/}{ESTA}
+\end{itemize}
+\end{alertblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Please bring ONE SUITCASE \& ONE SMALL BAG ONLY.
+\begin{alertblock}{What to Bring}
+\begin{itemize}
+\item PASSION, FORWARDNESS, INCENTIVE, MOTIVATION
+\item Clothing (Sleepwear,$\cdots$), shoes suitable for walking
+\item Prescription Medication
+\item Copies of your passport, visa, and medical insurance (STRONGLY REQUIRED)
+\item Smartphone (for emergency calls\footnote{For example, \href{https://www.rebtel.com/en/}{Rebtel} is a famous app for cheap international calls and unlimited calling.})
+\item Laptop computer or iPad (Internet connection will be OK for most of the program)
+\item Credit cards (optional)
+\item Electronic English dictionary (optional)
+\item Portable umbrella (it could rain during the program)
+\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\section{Keywords \& Key Concepts} 
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+Ask to us or Mr.Google for details.
+\begin{exampleblock}{Social \href{https://en.wikipedia.org/wiki/Entrepreneurship}{Entrepreneurship} \& \href{https://en.wikipedia.org/wiki/Innovation}{Innovation}}
+\begin{itemize}
+\item Social Innovation\footnote{Murray, R., Caulier-Grice, J., \& Mulgan, G. (2010). The open book of social innovation. London: National endowment for science, technology and the art.}\textsuperscript{,}\footnote{Nicholls, A., Simon, J., Gabriel, M., \& Whelan, C. (Eds.). (2015). New frontiers in social innovation research. Springer.}
+\item Social Entrepreneurship\footnote{Mair, J., Robinson, J., \& Hockerts, K. (Eds.). (2006). Social entrepreneurship. New York: Palgrave Macmillan.}\textsuperscript{,}\footnote{Bornstein, D. (2007). How to change the world: Social entrepreneurs and the power of new ideas. Oxford University Press.}\textsuperscript{,}\footnote{Schwartz, B. (2012). Rippling: How social entrepreneurs spread innovation throughout the world. John Wiley \& Sons.}
+\item Social Enterprise, \href{https://en.wikipedia.org/wiki/Grassroots}{Grassroots}
+\item Collective Impact, Radical Collaboration
+\item Minimum Viable Product (MVP)
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Ask to us or Mr.Google for details.
+\begin{exampleblock}{Design Thinking}
+\begin{itemize}
+    \item Design Thinking\footnote{Cross, N. (2011). Design thinking: Understanding how designers think and work. Berg.}\textsuperscript{,}\footnote{Martin, R., \& Martin, R. L. (2009). The design of business: Why design thinking is the next competitive advantage. Harvard Business Press.}\textsuperscript{,}\footnote{Plattner, H., Meinel, C., \& Leifer, L. (Eds.). (2012). Design thinking research. Springer.}
+    \item \href{https://en.wikipedia.org/wiki/Empathy}{Empathy}
+    \item \href{https://en.wikipedia.org/wiki/Brainstorming}{Brainstorming}\footnote{Rawlinson, J. G. (2017). Creative thinking and brainstorming. Routledge.}
+    \item Iterative Process
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Ask to us or Mr.Google for details.
+\begin{exampleblock}{Business}
+\begin{itemize}
+    \item Start-Up
+    \item \href{https://en.wikipedia.org/wiki/Incubator}{Incubator}
+    \item Business Model
+    \item Elevator Pitch
+    \item Corporate Social Responsibility (CSR)\footnote{Grayson, D., \& Hodges, A. (2017). Corporate social opportunity!: Seven steps to make corporate social responsibility work for your business. Routledge.}
+    \item Created Share Value (CSV)
+    \item B-Corporation
+    \item L3C (Low-profit Limited Liablity Corporation)
+    \item Flexible Purpose Corporations
+    \item Sharing Economy
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+Ask to us or Mr.Google for details.
+\begin{exampleblock}{Investment}
+\begin{itemize}
+\item \href{https://en.wikipedia.org/wiki/Stakeholder}{Stakeholder}
+\item Venture Capital\footnote{Gompers, P. A., \& Lerner, J. (2004). The venture capital cycle. MIT Press.}/Philanthropy\footnote{Saltman, K. (2010). The gift of education: Public education and venture philanthropy. Springer.}
+\item Impact Investing\footnote{Vecchi, V., Balbo, L., Brusoni, M., \& Caselli, S. (Eds.). (2017). Principles and practice of impact investing: A catalytic revolution. Routledge.}\textsuperscript{,}\footnote{Logue, D., McAllister, G., \& Schweitzer, J. (2017). Social entrepreneurship and impact investing report. University of Technology Sydney.}
+\item Social Impact Bonds
+\item Seed Capital
+\item \href{https://en.wikipedia.org/wiki/Bootstrapping}{Bootstrapping}
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\begin{frame}\ft{\insertsection}
+Ask to us or Mr.Google for details.
+\begin{exampleblock}{Measuring Impact}
+\begin{itemize}
+\item Social Return on Investment (SROI)\footnote{Then, V., Schober, C., Rauscher, O., \& Kehl, K. (2018). Social Return on Investment Analysis: Measuring the Impact of Social Investment. Springer.}
+\item \href{https://en.wikipedia.org/wiki/Sustainability}{Sustainability}\footnote{Dresner, S. (2012). The principles of sustainability. Routledge.}\textsuperscript{,}\footnote{Huckle, J., Sterling, S., \& Sterling, S. R. (Eds.). (1996). Education for sustainability. Earthscan.}
+\item Triple Bottom-Line (TBL)\footnote{Henriques, A., \& Richardson, J. (Eds.). (2013). The triple bottom line: Does it all add up. Routledge.}$\to$People, Planet, Profit
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{Further Reading}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\begin{itemize}
+    \item Seelig, T. (2012). inGenius: A crash course on creativity. Hay House, Inc.
+    \item Westley, F., Zimmerman, B., \& Patton, M. (2009). Getting to maybe: How the world is changed. Vintage Canada.
+    \item Prahalad, C. K. (2009). The fortune at the bottom of the pyramid, revised and updated 5th anniversary edition: Eradicating poverty through profits. FT Press.
+    \item Lee, N. R., \& Kotler, P. (2015). Social marketing: Changing behaviors for good. Sage Publications.
+    \item Kahane, A. (2010). Power and love: A theory and practice of social change. Berrett-Koehler Publishers.
+\end{itemize}
+\normalsize
+\end{frame}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{\insertsection}
+\footnotesize
+\begin{itemize}
+        \item Kelley, T. A. (2001). The art of innovation: Lessons in creativity from \href{https://en.wikipedia.org/wiki/IDEO}{IDEO}, America's leading design firm (Vol. 10). Broadway Business.
+        \item Strickland, B. (2007). Make the impossible possible: One man's crusade to inspire others to dream bigger and achieve the extraordinary. Crown Business.
+        \item Collins, J., \& Porras, J. I. (1995). Visionary companies. Artemis \& Winkler.
+        \item Benioff, M., \& Adler, C. (2006). The business of changing the world: Twenty great leaders on strategic corporate philanthropy. McGraw Hill Professional.
+        \item Anderson, V., \& Johnson, L. (1997). Systems thinking basics. Cambridge, MA: Pegasus Communications.
+        \item Sandel, M. J. (Ed.). (2007). Justice: A reader. Oxford University Press on Demand.
+        \item Smith, C. E. (2007). Design with the Other 90\%.
+\end{itemize}
+\normalsize
+\end{frame}
+\section{External Links}
+\setbeamerfont{frametitle}{size=\small}
+\begin{frame}\ft{\insertsection}
+\bb{Definitions of Social Innovation}
+\begin{itemize}
+    \item \href{https://www.gsb.stanford.edu/faculty-research/centers-initiatives/csi/defining-social-innovation}{Defining Social Innovation, Stanford Center for Social Innovation}
+    \item \href{http://www.socialinnovationacademy.eu/8-popular-social-innovation-definitions/}{8 popular social innovation definitions by the Social Innovation Academy, published in May 2018.}
+\end{itemize}
+\eb
+\begin{exampleblock}{Related Topics}
+\begin{itemize}
+    \item Community Organizing\footnote{Rubin, H. J., Rubin, I., \& Doig, R. (1992). Community organizing and development. New York: Macmillan.}\textsuperscript{,}\footnote{Gittell, R., \& Vidal, A. (1998). Community organizing: Building social capital as a development strategy. Sage publications.}
+    \item \href{https://en.wikipedia.org/wiki/Mindfulness}{Mindfulness}\footnote{Shapiro, S. L., \& Carlson, L. E. (2009). The art and science of mindfulness: Integrating mindfulness into psychology and the helping professions. American Psychological Association.}\textsuperscript{,}\footnote{Germer, C., Siegel, R. D., \& Fulton, P. R. (Eds.). (2016). Mindfulness and psychotherapy. Guilford Publications.}, \href{https://en.wikipedia.org/wiki/Meditation}{Meditation}
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+\section{Contact}
+\setbeamerfont{frametitle}{size=\Large}
+\begin{frame}\ft{Thank You Very Much}
+Your attention and interest is appreciated !!!
+\bb{Here's our website}
+\footnotesize
+\texttt{https://sites.google.com/a/viaprograms.org/via-next-innovators-homepage/}
+\normalsize
+\eb
+\end{frame}
+\end{document}
