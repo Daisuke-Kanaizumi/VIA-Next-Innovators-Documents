@@ -1,3 +1,3 @@
 # Documents
-This repository is the backup of our documents.
-Some of them are available on Slideshare and Speakerdeck.
+This repository is the backup of VIA Next Innovators documents.
+Some of them are available on their Slideshare and Speakerdeck.
